@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74e1f9ab-0a20-4002-88f2-09d12c85d59d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/okta-config.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bulkUserCreate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="e#25#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test1.csv" />
+        <option value="$PROJECT_DIR$/bulkUserCreate.py" />
+        <option value="$PROJECT_DIR$/okta-config.txt" />
+        <option value="$PROJECT_DIR$/user.csv" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="6" />
+    <option name="width" value="1890" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FBI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FBI" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74e1f9ab-0a20-4002-88f2-09d12c85d59d" name="Default Changelist" comment="" />
+      <created>1588693328836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588693328836</updated>
+      <workItem from="1588693330913" duration="46000" />
+      <workItem from="1588693491464" duration="129000" />
+      <workItem from="1588693854031" duration="1521000" />
+      <workItem from="1588848668035" duration="1760000" />
+      <workItem from="1588850464437" duration="1844000" />
+      <workItem from="1588852481953" duration="1797000" />
+      <workItem from="1588854319063" duration="1658000" />
+      <workItem from="1588856159670" duration="695000" />
+      <workItem from="1588858004218" duration="518000" />
+      <workItem from="1588861489288" duration="747000" />
+      <workItem from="1588863361918" duration="1783000" />
+      <workItem from="1588865180791" duration="1786000" />
+      <workItem from="1588867004909" duration="767000" />
+      <workItem from="1588868871226" duration="1284000" />
+      <workItem from="1588917298049" duration="1561000" />
+      <workItem from="1588919114977" duration="1779000" />
+      <workItem from="1588926933676" duration="1175000" />
+      <workItem from="1589516930002" duration="101000" />
+      <workItem from="1589976255390" duration="656000" />
+      <workItem from="1590577377845" duration="1495000" />
+      <workItem from="1590598973112" duration="1159000" />
+      <workItem from="1591162865849" duration="787000" />
+      <workItem from="1600672261992" duration="745000" />
+      <workItem from="1601908881039" duration="804000" />
+      <workItem from="1601910846421" duration="625000" />
+      <workItem from="1601920010703" duration="1778000" />
+      <workItem from="1601921835206" duration="1778000" />
+      <workItem from="1601923801575" duration="1782000" />
+      <workItem from="1601925628445" duration="1782000" />
+      <workItem from="1601927458582" duration="923000" />
+      <workItem from="1601965073045" duration="886000" />
+      <workItem from="1601993412463" duration="1691000" />
+      <workItem from="1601995886726" duration="1313000" />
+      <workItem from="1601997839563" duration="599000" />
+      <workItem from="1601999655605" duration="1478000" />
+      <workItem from="1602001539992" duration="720000" />
+      <workItem from="1602047189382" duration="1778000" />
+      <workItem from="1602049003289" duration="867000" />
+      <workItem from="1602050821928" duration="1769000" />
+      <workItem from="1602052642128" duration="1253000" />
+      <workItem from="1602070439289" duration="1171000" />
+      <workItem from="1602074672067" duration="1770000" />
+      <workItem from="1602076745316" duration="952000" />
+      <workItem from="1602079377076" duration="1773000" />
+      <workItem from="1602138279288" duration="1863000" />
+      <workItem from="1602140222413" duration="1445000" />
+      <workItem from="1602249832760" duration="1820000" />
+      <workItem from="1602564276207" duration="1311000" />
+      <workItem from="1602566428961" duration="600000" />
+      <workItem from="1602571242121" duration="599000" />
+      <workItem from="1602573449472" duration="601000" />
+      <workItem from="1602577480838" duration="1258000" />
+      <workItem from="1602586310398" duration="1451000" />
+      <workItem from="1602597477182" duration="735000" />
+      <workItem from="1602598370638" duration="1459000" />
+      <workItem from="1602600160894" duration="1623000" />
+      <workItem from="1602602325838" duration="606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="68656000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="0" width="1260" height="640" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24542429" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3280943" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3280943" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test1.csv" />
+    <entry file="file://$PROJECT_DIR$/UserNotCreated.txt" />
+    <entry file="file://$PROJECT_DIR$/FBIuser.csv" />
+    <entry file="file://$PROJECT_DIR$/UserCreated.txt" />
+    <entry file="file://$PROJECT_DIR$/user.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulkUserCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#25#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/okta-config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
