@@ -1,4 +1,6 @@
 [General]
 filename=user.csv
+group_name=FBI Member
+group_name1=FBI Member Admin
 url=https://familybusinessinstitute.oktapreview.com
 token=00YBqQ5-P9sOWaE28TSzLdhnEzwvHn_DsVYI8VvSPz
