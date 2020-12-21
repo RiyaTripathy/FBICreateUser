@@ -4,6 +4,9 @@ import csv
 import configparser
 import requests
 import pandas as pd
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # Read the config file to retrieve url, token and filename
 config = configparser.ConfigParser()
@@ -37,8 +40,6 @@ def createStagedUser (id, login, firstName, lastName, email, Role , Company, Div
     # Call the create user Okta API
     res = requests.post(url+'/api/v1/users?activate', headers={'Accept': 'application/json', 'Content-Type':'application/json', 'Authorization': 'SSWS '+token}, json=jsonTosend, verify=False)
 
-
-
     # Check the status code of the response for success and failure
     if res.status_code == 200:
 
@@ -60,6 +61,7 @@ def createStagedUser (id, login, firstName, lastName, email, Role , Company, Div
                 res = requests.get(url + '/api/v1/groups?q=' + FBIMember,
                                headers={'Accept': 'application/json', 'Content-Type': 'application/json',
                                         'Authorization': 'SSWS ' + token},verify=False)
+
                 dictFromServer = res.json()
                 groupId = dictFromServer[0]['id']
 
@@ -106,7 +108,9 @@ with open('FBIuser.csv','r') as File:
             res1 = requests.get(url + '/api/v1/meta/types/user',
                                 headers={'Accept': 'application/json', 'Content-Type': 'application/json',
                                          'Authorization': 'SSWS ' + token},verify=False)
+
             result=res1.json()
+
 
             # Check if the value of the Role from csv matches the Role code for FBI user
             # If matches, assign the Role variable to "FBI User" 
