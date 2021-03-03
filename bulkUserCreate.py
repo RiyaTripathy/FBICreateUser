@@ -35,6 +35,9 @@ df2.to_csv('FBIuser.csv',index=False)
 
 def createStagedUser (id, login, firstName, lastName, email, Role , Company, Division, Roundtable ):
 
+    Company = [x.strip(' ') for x in Company]
+    Division = [x.strip(' ') for x in Division]
+    Roundtable = [x.strip(' ') for x in Roundtable]
     # preparing the Create User JSON BODY
     jsonTosend = {"type": {"id": id},"profile": {"firstName": firstName.lstrip().rstrip(), "lastName": lastName.lstrip().rstrip(), "role_code": Role.lstrip().rstrip(), "company": Company, "divisions": Division, "roundtable_group": Roundtable,"email": email.lstrip().rstrip(), "login": login.lstrip().rstrip()}}
     print(jsonTosend)
@@ -114,7 +117,7 @@ with open('FBIuser.csv','r') as File:
 
             # Check if the value of the Role from csv matches the Role code for FBI user
             # If matches, assign the Role variable to "FBI User"
-            if row[4] == "EXT1":
+            if row[4].lstrip().rstrip() == "EXT1":
                 Role = "FBI Member"
 
                 # Iterate the response of Okta User Type API to match "FBI User" Role name with "FBI User" user type in Okta
@@ -129,7 +132,7 @@ with open('FBIuser.csv','r') as File:
 
             # Check if the value of the Role from csv matches the Role code for FBI member admin
             # If matches, assign the Role variable to "FBI Member Admin"
-            elif row[4]=="EXT2":
+            elif row[4].lstrip().rstrip()=="EXT2":
                     Role="FBI Member Admin"
 
                     # Iterate response of the Okta User Type API to match "FBI Member Admin" Role name with "FBI Member Admin" user type in Okta
