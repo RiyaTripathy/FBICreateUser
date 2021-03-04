@@ -35,12 +35,15 @@ df2.to_csv('FBIuser.csv',index=False)
 
 def createStagedUser (id, login, firstName, lastName, email, Role , Company, Division, Roundtable ):
 
+    # Stripping whitespaces from Company , Division and Roundtable values
+
     Company = [x.strip(' ') for x in Company]
     Division = [x.strip(' ') for x in Division]
     Roundtable = [x.strip(' ') for x in Roundtable]
+
     # preparing the Create User JSON BODY
     jsonTosend = {"type": {"id": id},"profile": {"firstName": firstName.lstrip().rstrip(), "lastName": lastName.lstrip().rstrip(), "role_code": Role.lstrip().rstrip(), "company": Company, "divisions": Division, "roundtable_group": Roundtable,"email": email.lstrip().rstrip(), "login": login.lstrip().rstrip()}}
-    print(jsonTosend)
+
     # Call the create user Okta API
     res = requests.post(url+'/api/v1/users?activate', headers={'Accept': 'application/json', 'Content-Type':'application/json', 'Authorization': 'SSWS '+token}, json=jsonTosend, verify=False)
 
@@ -51,7 +54,7 @@ def createStagedUser (id, login, firstName, lastName, email, Role , Company, Div
 
         # Add the userid of the created user to a file for record
         with open('UserCreated.txt', 'a') as f:
-            f.write(login + '\n')
+            f.write(login.lstrip().rstrip() + '\n')
             dict = res.json()
 
             # Getting the id of the created user
@@ -90,10 +93,12 @@ def createStagedUser (id, login, firstName, lastName, email, Role , Company, Div
                                headers={'Accept': 'application/json', 'Content-Type': 'application/json',
                                         'Authorization': 'SSWS ' + token},verify=False)
 
-    # Add the userid of the users not created to a file for record
+    # Add the userid and error summary of the users not created to a csv file for record
     else:
-        with open('UserNotCreated.txt', 'a') as f:
-            f.write(login +' '+ "creation failed" +'-'+str(response['errorCauses'])+'\n')
+      with open('UserNotCreated.csv', mode='a') as f:
+          error = str(response['errorCauses'])
+          writer = csv.writer(f, delimiter=',')
+          writer.writerow([login.lstrip().rstrip(), error[19:-3]])
     return res.status_code
 
 # Read the transformed data from the csv file
