@@ -38,11 +38,17 @@ def createStagedUser (id, login, firstName, lastName, email, Role , Company, Div
     # Stripping whitespaces from Company , Division and Roundtable values
 
     Company = [x.strip(' ') for x in Company]
+    CompanySet = set(Company)
+    UniqueCompany=list(CompanySet)
     Division = [x.strip(' ') for x in Division]
+    DivisionSet = set(Division)
+    UniqueDivision = list(DivisionSet)
     Roundtable = [x.strip(' ') for x in Roundtable]
+    RoundtableSet = set(Roundtable)
+    UniqueRoundtable = list(RoundtableSet)
 
     # preparing the Create User JSON BODY
-    jsonTosend = {"type": {"id": id},"profile": {"firstName": firstName.lstrip().rstrip(), "lastName": lastName.lstrip().rstrip(), "role_code": Role.lstrip().rstrip(), "company": Company, "divisions": Division, "roundtable_group": Roundtable,"email": email.lstrip().rstrip(), "login": login.lstrip().rstrip()}}
+    jsonTosend = {"type": {"id": id},"profile": {"firstName": firstName.lstrip().rstrip(), "lastName": lastName.lstrip().rstrip(), "role_code": Role.lstrip().rstrip(), "company": UniqueCompany, "divisions": UniqueDivision, "roundtable_group": UniqueRoundtable,"email": email.lstrip().rstrip(), "login": login.lstrip().rstrip()}}
 
     # Call the create user Okta API
     res = requests.post(url+'/api/v1/users?activate', headers={'Accept': 'application/json', 'Content-Type':'application/json', 'Authorization': 'SSWS '+token}, json=jsonTosend, verify=False)
